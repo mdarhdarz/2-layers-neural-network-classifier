@@ -42,6 +42,9 @@ nHidden, lr, lam = best_params
 注释上方第2、3行并取消注释第4行，可以跳过搜索，使用给定超参数直接训练
 
 #### 其他文件说明
+- load data.py
+
+  读取在官网下载的MNIST数据集压缩文件，转化为ndarray格式，以$N \times d$维矩阵形式存储，并保存为npy文件
 
 - utils.py
 
