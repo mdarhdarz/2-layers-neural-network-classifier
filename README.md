@@ -10,7 +10,9 @@ matplotlib 3.4.3
 
 #### 训练及测试步骤
 
-运行main.py将一键完成下述操作：
+首先解压在data文件夹下的压缩文件，运行load data.py保存为npy文件
+
+然后运行main.py将一键完成下述操作：
 
 1. 载入数据集，划分训练、验证、测试集
 
@@ -42,9 +44,10 @@ nHidden, lr, lam = best_params
 注释上方第2、3行并取消注释第4行，可以跳过搜索，使用给定超参数直接训练
 
 #### 其他文件说明
+
 - load data.py
 
-  读取在官网下载的MNIST数据集压缩文件，转化为ndarray格式，以$N \times d$维矩阵形式存储，并保存为npy文件
+  读取在官网下载的MNIST数据集二进制文件，转化为ndarray格式，以$N \times d$维矩阵形式存储，并保存为npy文件
 
 - utils.py
 
