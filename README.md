@@ -43,10 +43,6 @@ nHidden, lr, lam = best_params
 
 #### 其他文件说明
 
-- load data.py
-
-  读取在官网下载的MNIST数据集压缩文件，转化为ndarray格式，以$N \times d$维矩阵形式存储，并保存为npy文件
-
 - utils.py
 
   包含softmax、one-hot编码、标准化、网络前传预测等函数
