@@ -26,8 +26,8 @@ def load_mnist(path, kind='train'):
     return images, labels
 
 
-X_train, y_train = load_mnist('./data/MNIST/raw')
-X_test, y_test = load_mnist('./data/MNIST/raw', 't10k')
+X_train, y_train = load_mnist('./data')
+X_test, y_test = load_mnist('./data', 't10k')
 np.save('X_train.npy', X_train)
 np.save('y_train.npy', y_train)
 np.save('X_test.npy', X_test)
